@@ -7,6 +7,12 @@ def resta_renombrada(x, y):
     result = x -y
     return result
 
+#verificar que funciones iguales se detecten tambien(clones tipo 1)
+def resta(a, b):
+    resultado = a - b
+    return resultado
+
+
 
 # otro caso positivo, es lo mismo pero con lineas reordenadas
 def procesar_factura(monto, tasa_impuesto, descuento):
@@ -31,3 +37,17 @@ def procesar_remito(items_remito, deposito_destino):
             total_items += item.cantidad
     return total_items
 
+#Funciones de tipo clon semantico que hacen lo mismo, de diferente manera, el return total devuelve el mismo valor
+def sumar_hasta_n_for(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+
+def sumar_hasta_n_while(n):
+    total = 0
+    i = 1
+    while i <= n:
+        total += i
+        i += 1
+    return total
