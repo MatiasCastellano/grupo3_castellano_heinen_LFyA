@@ -1,7 +1,7 @@
 import os
-from src.extractor import extraer_funciones_de_archivo
-from src.normalizer import normalizar_ast
-from src.serializer import serializar_ast, calcular_similitud_levenshtein, es_candidato_duplicado
+from extractor import extraer_funciones_de_archivo
+from normalizer import normalizar_ast
+from serializer import serializar_ast, calcular_similitud_levenshtein, es_candidato_duplicado
 
 #verifica clones de tipo 1, identicas
 def test_funciones_identicas():

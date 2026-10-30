@@ -1,7 +1,7 @@
 import os
-from src.extractor import extraer_funciones_de_archivo
-from src.normalizer import normalizar_ast
-from src.serializer import (
+from extractor import extraer_funciones_de_archivo
+from normalizer import normalizar_ast
+from serializer import (
     calcular_similitud_levenshtein,
     es_candidato_duplicado,
     serializar_ast,

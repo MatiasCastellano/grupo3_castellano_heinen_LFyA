@@ -7,13 +7,13 @@ import sys
 import textwrap
 from typing import List, Dict, Any, Tuple
 
-from src.extractor import (
+from extractor import (
     FunctionExtractor,
     extraer_funciones_de_archivo,
     extraer_funciones_de_directorio,
 )
-from src.normalizer import normalizar_ast
-from src.serializer import (
+from normalizer import normalizar_ast
+from serializer import (
     serializar_ast,
     calcular_similitud_levenshtein,
     es_candidato_duplicado,
